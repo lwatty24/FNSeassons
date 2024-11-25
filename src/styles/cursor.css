@@ -1,0 +1,33 @@
+* {
+  cursor: none !important;
+}
+
+.cursor {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform-origin: center;
+  transition: width 0.2s ease, height 0.2s ease;
+  margin-left: -6px;
+  margin-top: -6px;
+  mix-blend-mode: difference;
+}
+
+.cursor-hover {
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -12px;
+  background: white;
+  mix-blend-mode: difference;
+}
+
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+} 
